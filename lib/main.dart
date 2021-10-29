@@ -15,14 +15,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My App'),
+          title: Text('Quiz App'),
         ),
         body: Column(
           children: [
             Text('Questions'),
-            ElevatedButton(child: Text('Answer 1'), onPressed: ans),
-            ElevatedButton(child: Text('Answer 2'), onPressed: ans),
-            ElevatedButton(child: Text('Answer 3'), onPressed: ans),
+            ElevatedButton(
+                child: Text('Answer 1'),
+                onPressed: () => print('answer 1 Choosen!!')),
+            ElevatedButton(
+                child: Text('Answer 2'),
+                onPressed: () => print('Answer 2 Choosen!!')),
+            ElevatedButton(
+                child: Text('Answer 3'),
+                onPressed: () => print('Answer 3 Choosen!!')),
           ],
         ),
       ),
